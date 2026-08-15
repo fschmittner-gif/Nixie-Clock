@@ -1,0 +1,62 @@
+# Nixie Clock
+
+The goal of this project is to build your own Nixie Clock and get a result like this: 
+
+<img width="50%" height="50%" alt="NixieClockPNG" src="https://github.com/user-attachments/assets/f15e18cb-4954-4a30-88d9-5e40f9999098" />
+
+
+## Resources
+### Controlling the Tubes
+
+The project is based on the idea of controlling the Nixie tubes with old russian driver parts utilizing an arduino nano based on this [article](https://www.instructables.com/Controlling-Nixie-Tube-With-Arduino-Using-K155ID1-/) 
+
+<img width="70%" height="70%" alt="Tubes" src="https://content.instructables.com/FN2/1ZCH/KVGOE71X/FN21ZCHKVGOE71X.png" />
+
+
+### Real Time Clock (RTC)
+
+In order to keep the time during a power outage or when moving the clock a RTC added to the project. For this purpose the DS3231 was used due to its low cost, easy I2C comunnication and available Arduino libraries.
+
+<img width="20%" height="20%" alt="RTC" src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSDtU3tkG2VmIApGWzz9WwgbIkqxKVBMOfeg96Nj73GCxVfh-xf7HzulpxQOxY_ohqEbN519tbpTo6MZ-1UbXGI60lt3EvOn342TQSrz5Q19jvr5SmMBKUBUG2Vq28j6VTwDyKGFQ&usqp=CAc" />
+
+## Designing the PCB
+
+For the PCB Design a Schematic and Layout were designed in Fusion 360 and available for download and use. Before ordering your own PCBs, the DC Jack placement should be adapted as in the current design it sits inverted on the TOP Side. For my build, I fixed it by manipulating the installed DC Jack before soldering it onto the PCB.  
+
+Rendering of PCB V1:
+
+<img width="40%" height="40%" alt="Schematic V1 3D BOTTOM" src="https://github.com/user-attachments/assets/a56b7200-0354-4d1e-90cf-888a4bf09623" />
+<img width="40%" height="40%" alt="Schematic V1 3D TOP" src="https://github.com/user-attachments/assets/ed9e1d39-6bfd-4eaf-aa6d-604f388becbe" />
+
+
+## BOM
+
+| Reference Designators | Quantity | Description | Package | Value |
+|---|---|---|---|---|
+| ARDUINO_NANO | 1 | Arduino Nano V3.0 | ARDUINO_NANO |  |
+| C1, C2, C3, C4, C5 | 5 | CAPACITOR, European symbol | C0603 | 100n |
+| C6, C7 | 2 | CAPACITOR, European symbol | C0603 | 10u |
+| D1 | 1 | DCDC Converter | NIXIE_DCDC | DCDC_NIXIE |
+| DC_JACK | 1 | 2.1mm x 5.5mm THM DC jack with internal switch. Digikey part #PJ-102A, 4UCON part #05537 | PJ-102A | 2.1MMJACKTHM |
+| DCDC_IN, DCDC_OUT | 2 | PIN HEADER | 1X02 |  |
+| L1 | 1 | Linear Regulator 5V | TO220 | L7805_5V |
+| NX1, NX2, NX3, NX4 | 4 | IN-14: medium numeric frontview nixie tube | IN-14 | IN-14 |
+| R1, R2, R3, R4 | 4 | RESISTOR, European symbol | R1206 | 10k |
+| RTC | 1 | RTC Module with Battery and EEPROM based on DS3231 and AT24C32 chips | RTC-DS3231-AT24C32 | RTC-DS3231-AT24C32 |
+| U1, U2, U3, U4 | 4 | Nixie Drivers | DIL16 | K155ID1 |
+
+## Software
+
+The Software is split into 2 parts: "SetTime" and "Control".
+
+First the "SetTime" code has to be flashed to the Arduino in order to set the RTC to the current time. Afterwards the "Coltrol" code shall be flashed to actually display the time on the Nixie Tubes. I recommend using the Arduino IDE for programming.
+
+## Case
+
+A ready to print 3D case for the designed PCB is available to download. 
+
+<img width="50%" height="50%" alt="Gehäuse V2" src="https://github.com/user-attachments/assets/1ec96545-68d5-4bad-8f2c-34ddce8d1bf9" />
+
+
+
+

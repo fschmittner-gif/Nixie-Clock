@@ -1,0 +1,13 @@
+Reference Designators	Quantity	Description	Package	Value
+	1	Board	Board	
+ARDUINO_NANO	1	Arduino Nano V3.0	ARDUINO_NANO	
+C1, C2, C3, C4, C5	5	CAPACITOR, European symbol	C0603	100n
+C6, C7	2	CAPACITOR, European symbol	C0603	10u
+D1	1	DCDC Converter	NIXIE_DCDC	DCDC_NIXIE
+DC_JACK	1	2.1mm x 5.5mm THM DC jack with internal switch. Digikey part #PJ-102A, 4UCON part #05537	PJ-102A	2.1MMJACKTHM
+DCDC_IN, DCDC_OUT	2	PIN HEADER	1X02	
+L1	1	Linear Regulator 5V	TO220	L7805_5V
+NX1, NX2, NX3, NX4	4	IN-14: medium numeric frontview nixie tube	IN-14	IN-14
+R1, R2, R3, R4	4	RESISTOR, European symbol	R1206	10k
+RTC	1	RTC Module with Battery and EEPROM based on DS3231 and AT24C32 chips	RTC-DS3231-AT24C32	RTC-DS3231-AT24C32
+U1, U2, U3, U4	4	Nixie Driverts	DIL16	K155ID1
