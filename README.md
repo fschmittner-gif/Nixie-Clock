@@ -2,8 +2,8 @@
 
 The goal of this project is to build your own Nixie Clock and get a result like this: 
 
-<img width="50%" height="50%" alt="NixieClockPNG" src="https://github.com/user-attachments/assets/f15e18cb-4954-4a30-88d9-5e40f9999098" />
 
+<img width="50%" height="50%" alt="NixieClockPNG" src="https://github.com/user-attachments/assets/d1e34a4e-a483-455f-ad5f-f81e5258e634" />
 
 ## Resources
 ### Controlling the Tubes
@@ -25,9 +25,8 @@ For the PCB Design a Schematic and Layout were designed in Fusion 360 and availa
 
 Rendering of PCB V1:
 
-<img width="40%" height="40%" alt="Schematic V1 3D BOTTOM" src="https://github.com/user-attachments/assets/a56b7200-0354-4d1e-90cf-888a4bf09623" />
-<img width="40%" height="40%" alt="Schematic V1 3D TOP" src="https://github.com/user-attachments/assets/ed9e1d39-6bfd-4eaf-aa6d-604f388becbe" />
-
+<img width="40%" height="40%" alt="Schematic V1 3D BOTTOM" src="https://github.com/user-attachments/assets/ed71f3c9-ec3f-40fd-b28c-fcd79df5c866" />
+<img width="40%" height="40%" alt="Schematic V1 3D TOP" src="https://github.com/user-attachments/assets/46bbb8fd-a7d0-4900-9558-70f116a16dd6" />
 
 ## BOM
 
@@ -55,7 +54,7 @@ First the "SetTime" code has to be flashed to the Arduino in order to set the RT
 
 A ready to print 3D case for the designed PCB is available to download. 
 
-<img width="50%" height="50%" alt="Gehäuse V2" src="https://github.com/user-attachments/assets/1ec96545-68d5-4bad-8f2c-34ddce8d1bf9" />
+<img width="50%" height="50%" alt="Gehäuse V2" src="https://github.com/user-attachments/assets/7d09da18-d838-4d78-9b70-2e443c91c7ed" />
 
 
 
