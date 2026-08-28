@@ -56,6 +56,15 @@ A ready to print 3D case for the designed PCB is available to download.
 
 <img width="50%" height="50%" alt="Gehäuse V2" src="https://github.com/user-attachments/assets/7d09da18-d838-4d78-9b70-2e443c91c7ed" />
 
+## Lizenzierung
+
+Dieses Projekt ist dual lizenziert:
+- Die **Software und Firmware** steht unter der [Apache 2.0 Lizenz](LICENSE-SOFTWARE).
+- Die **Hardware-Designs** (Schaltpläne, CAD-Daten, PCB-Layouts) stehen unter der [CERN-OHL-P v2 Lizenz](LICENSE-HARDWARE).
+
+Beide Lizenzen schließen jegliche Haftung oder Gewährleistung aus. Die Nutzung erfolgt auf eigene Gefahr.
+
+
 
 
 
